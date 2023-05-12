@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Hanken Grotesk";
+}
+
+/******           --------------->         Desktop          <---------------          ******/
+
+@media (min-width: 426px) {
+    .box {
+        display: flex;
+        margin: 10rem auto;
+        width: 50%;
+        box-shadow: .6rem .6rem 2rem rgba(0, 98, 255, 0.148);
+        border-radius: 1rem;
+    }
+
+    #blue-box {
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    #blue-box .title {
+        color: hsl(241, 100%, 89%);
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.2vw;
+    }
+
+    .total-score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        color: hsl(0, 0%, 100%);
+        margin: 1rem 0;
+    }
+
+    .total-score .first {
+        font-size: 3.125vw;
+        position: relative;
+        top: 1.25rem;
+        font-weight: bolder;
+    }
+
+    .total-score .second {
+        font-size: 1vw;
+        color: hsl(241, 100%, 89%);
+    }
+
+    p.first {
+        font-size: 1.2vw;
+        color: hsl(0, 0%, 100%);
+        margin: .625rem;
+    }
+
+    p.second {
+        font-size: 1vw;
+        color: hsl(241, 100%, 89%);
+        text-align: center;
+        margin: 0 1.2rem 2rem;
+    }
+
+    #white-box {
+        width: 50%;
+        padding: 1.2rem;
+        height: 100%;
+    }
+
+    #white-box .title-box {
+        color: hsl(224, 30%, 27%);
+        font-size: 1.2vw;
+        font-weight: bolder;
+    }
+
+    #white-box .result-box {
+        display: flex;
+        justify-content: space-between;
+        margin: .7rem 0;
+        padding: .5rem;
+        border-radius: .4rem;
+    }
+
+    .result-box .title {
+        display: flex;
+        align-items: center;
+        font-size: 1.2vw;
+    }
+
+    .result-box :last-child {
+        display: flex;
+        align-items: center;
+        font-size: 1.2vw;
+    }
+
+    .result-box .title .icon {
+        margin-right: .5rem;
+        height: 1.2vw;
+        width: 1.2vw;
+    }
+
+    .result-box .score {
+        margin-right: .5rem;
+    }
+
+    .result-box .score {
+        color: hsl(224, 30%, 27%);
+    }
+
+    .result-box .max-score {
+        color: hsl(241, 100%, 89%);
+    }
+
+    #Reaction .title {
+        color: hsl(0, 100%, 67%);
+    }
+
+    #Memory .title {
+        color: hsl(39, 100%, 56%);
+    }
+
+    #Verbal .title {
+        color: hsl(166, 100%, 37%);
+    }
+
+    #Visual .title {
+        color: hsl(234, 85%, 45%);
+    }
+
+    .result-box#Reaction {
+        background-color: hsl(0, 100%, 95%);
+    }
+
+    .result-box#Memory {
+        background-color: hsl(39, 100%, 95%);
+    }
+
+    .result-box#Verbal {
+        background-color: hsl(166, 100%, 92%);
+    }
+
+    .result-box#Visual {
+        background-color: hsl(234, 85%, 95%);
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        color: hsl(0, 0%, 100%);
+        margin: auto;
+        width: 100%;
+        border: 0;
+        border-radius: 2rem;
+        background-color: hsl(224, 30%, 27%);
+        padding: .5rem;
+        font-size: 1.2vw;
+    }
+}
+
+/******           --------------->         Desktop          <---------------          ******/
+
+@media (max-width: 425px) {
+    .box {
+        display: block;
+    }
+
+    #blue-box {
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    #blue-box .title {
+        color: hsl(241, 100%, 89%);
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+
+    }
+
+    .total-score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 10rem;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        color: hsl(0, 0%, 100%);
+        margin: 1rem 0;
+    }
+
+    .total-score .first {
+        font-size: 3.125rem;
+        position: relative;
+        top: 1.25rem;
+    }
+
+    .total-score .second {
+        font-size: .625rem;
+        color: hsl(241, 100%, 89%);
+    }
+
+    p.first {
+        margin: .5rem;
+        color: hsl(221, 100%, 96%);
+        font-size: 1.5rem;
+    }
+
+    p.second {
+        margin: 0 auto 1.5rem;
+        width: 60%;
+        font-size: .6875rem;
+        text-align: center;
+        color: hsl(241, 100%, 89%);
+    }
+
+    #white-box {
+        padding: 1.5rem;
+
+    }
+
+    #white-box .title-box {
+        color: hsl(224, 30%, 27%);
+        font-size: larger;
+        margin-bottom: 1.5rem;
+    }
+
+    .result-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 1.2rem;
+        border-radius: .4rem;
+    }
+
+    .result-box .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .result-box .title .icon {
+        margin-right: .5rem;
+    }
+
+    .result-box .score {
+        color: hsl(224, 30%, 27%);
+    }
+
+    .result-box .max-score {
+        color: hsl(241, 100%, 89%);
+    }
+
+    #Reaction .title {
+        color: hsl(0, 100%, 67%);
+    }
+
+    #Memory .title {
+        color: hsl(39, 100%, 56%);
+    }
+
+    #Verbal .title {
+        color: hsl(166, 100%, 37%);
+    }
+
+    #Visual .title {
+        color: hsl(234, 85%, 45%);
+    }
+
+    .result-box#Reaction {
+        background-color: hsl(0, 100%, 95%);
+    }
+
+    .result-box#Memory {
+        background-color: hsl(39, 100%, 95%);
+    }
+
+    .result-box#Verbal {
+        background-color: hsl(166, 100%, 92%);
+    }
+
+    .result-box#Visual {
+        background-color: hsl(234, 85%, 95%);
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        margin: auto;
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(224, 30%, 27%);
+        border: 0;
+        border-radius: 2rem;
+        padding: 1.2rem;
+    }
+
+
+}
